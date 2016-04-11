@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="/css/validation.css">
+</head>
+<body>
+  <h1 class="banner">NSS Bank Loan Application</h1>
+  <!-- Applicant first name -->
+  <!-- Applicant middle initial -->
+  <!-- Applicant last name -->
+  <!-- Applicant address -->
+  <!-- Applicant email address -->
+  <!-- Applicant telephone number -->
+  <!-- Applicant occupation -->
+  <!-- Applicant LinkedIn URL -->
+  <!-- Applicant employer -->
+  <!-- Employer address -->
+	<fieldset>
+    <legend>Tell us about yourself</legend>
+    <label for="first-name">Enter your first name</label>
+    <input type="text" id="first-name" placeholder="Enter your first name"autofocus>
+    <br/>
+    <label for="middle-initial">Enter your middle initial</label>
+    <input type="text" id="middle-initial">
+    <br/>
+    <label for="last-name">Enter your last name</label>
+    <input type="text" id="last-name">
+    <br/>
+    <label for="address">Enter your address</label>
+    <input type="text" id="address">
+    <br/>
+    <label for="email-address">Enter your email address</label>
+    <input type="email" id="email" placeholder="you@somewhere.com"><div class="errorEmail">Please type a valid email address</div>
+    <br/>
+    <label for="telephone">Enter your mobile number</label>
+    <input type="tel" id="telephone" placeholder="777-444-3333">
+    <br/>
+    <label for="occupation">Enter your occupation</label>
+    <input type="text" id="occupation">
+    <br/>
+    <label for="LinkedIn-text">Enter your LinkedIn web site</label>
+    <input type="text" id="LinkedIn-url" placeholder="www.linkedin.com/example">
+    <br/>
+    <label for="employer">Enter your employer</label>
+    <input type="text" id="employer">
+    <br/>
+    <label for="employer-address">Enter your employer's address</label>
+    <input id="employer-address" type="text" id="employer-address">
+ 	</fieldset>
+
+  <!-- Type of loan select element with these options: -->
+  <!-- Commercial -->
+  <!-- Real estate -->
+  <!-- Personal -->
+  <!-- Mortgage -->
+  <fieldset>
+    <legend>What type of loan are you applying for?</legend>
+    <input name="loan" list="loan_type">
+    <datalist id="loan_type">
+    <option value="Commercial ">
+    <option value="Real estate">
+    <option value="Personal">
+    <option value="Mortgage">
+    </datalist>
+  </fieldset>
+
+<!-- Requested amount of loan -->
+  <fieldset>
+    <legend>Requested Loan Amount</legend>
+    <label for="loan_amount">Amount here</label>
+    <input type="number" id="amount">
+  </fieldset>
+
+<!-- Radio button elements for loan length -->
+<!-- 5 years -->
+<!-- 15 years -->
+<!-- 30 years -->
+  <fieldset>
+    <legend>Length of Loan</legend>
+    <input type="radio" name="length-loan" value="5"> 5 years
+    <input type="radio" name="length-loan" value="15"> 15 years
+    <input type="radio" name="length-loan" value="30"> 30 years
+  </fieldset>
+
+<!-- Checkbox group for special conditions -->
+<!-- I have a down payment -->
+<!-- Out-of-state resident -->
+<!-- Married -->
+<!-- Loan will be co-signed -->
+  <fieldset>
+    <legend>Please check any box that applies to you.</legend>
+    <input type="checkbox" name="down-payment" value="down-payment"> I have a down payment
+    <input type="checkbox" name="out-of-state" value="out-of-state"> Out-of-state resident
+    <input type="checkbox" name="married" value="married"> Married
+    <input type="checkbox" name="co-signer" value="co-signer"> Loan will be co-signed
+  </fieldset>
+
+<!-- A text area to allow for additional comments -->
+  <fieldset>
+    <legend>Additional Comments</legend>
+    <label for="comments"></label>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Please enter comments here"></textarea>
+  </fieldset>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+<footer>
+  <h3>&copy; NSS Bank</h3>
+</footer>
+</html>
